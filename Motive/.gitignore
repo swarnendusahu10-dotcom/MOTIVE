@@ -1,0 +1,58 @@
+# ─────────────────────────────────────────────────────────────────────────
+# Motive/.gitignore — put this file at the REPO ROOT (same level as
+# Backend/ and Frontend/), not inside either subfolder.
+# ─────────────────────────────────────────────────────────────────────────
+
+# ── Secrets / credentials (never commit these) ─────────────────────────────
+Backend/firebase-service-account.json
+**/firebase-service-account.json
+**/*firebase-adminsdk*.json
+**/*service-account*.json
+**/*serviceAccount*.json
+**/*credentials*.json
+*.pem
+*.key
+*.p12
+
+# Any .env file, anywhere in the repo (.env, .env.local, .env.production...)
+# .env.example is intentionally NOT ignored -- that one has no real secrets
+# and should stay in git as the setup template.
+.env
+.env.*
+!.env.example
+!**/.env.example
+
+# ── Python (Backend) ────────────────────────────────────────────────────
+Backend/venv/
+Backend/.venv/
+**/__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Node / Vite (Frontend) ──────────────────────────────────────────────
+Frontend/node_modules/
+**/node_modules/
+Frontend/dist/
+Frontend/build/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ── Editor / OS junk ─────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+*.swp
+
+# (VS Code settings are left tracked by default since teams often share
+# them; uncomment if you'd rather keep .vscode/ out of git too)
+# .vscode/
+
+# ── Misc local artifacts ─────────────────────────────────────────────────
+*.log
+.cache/
