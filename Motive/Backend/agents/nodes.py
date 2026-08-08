@@ -37,7 +37,8 @@ the frontend "Case Room" page renders as the live agent-to-agent chat.
 """
 
 import re
-from langchain_core.messages import SystemMessage, AIMessage, ToolMessage
+import logging
+from langchain_core.messages import HumanMessage, AIMessage, ToolMessage
 from langgraph.prebuilt import create_react_agent
 from langgraph.types import interrupt
 
@@ -49,6 +50,8 @@ from agents.tools_db import DB_TOOLS
 from agents.tools_geo import GEO_TOOLS
 from agents.tools_pattern import PATTERN_TOOLS
 from services import firebase_service as fb
+
+logger = logging.getLogger("motive.nodes")
 
 MAX_TURNS = 8
 SPECIALIST_RECURSION_LIMIT = 8   # caps each specialist's internal tool-call loop
@@ -93,21 +96,44 @@ def _extract_linked_case_ids(messages: list) -> list[str]:
 
 def _run_specialist(state: CaseState, cache_name: str, tools: list, persona: str, speak_to: str) -> tuple[dict, dict]:
     agent = _agent(cache_name, tools, persona)
-    task = SystemMessage(content=(
+    # This MUST be a HumanMessage, not a SystemMessage. `_agent()` builds
+    # the ReAct agent with `prompt=persona`, which LangGraph auto-prepends
+    # as its own SystemMessage on every invoke. On the very first
+    # specialist call in a fresh case run, state["messages"] is still
+    # empty -- so if `task` were also a SystemMessage, Gemini would
+    # receive a request with ONLY system instructions and zero actual
+    # conversational turns, which the SDK rejects with
+    # `ValueError: contents are required.` (ends up here as a raw 500
+    # instead of an agent reply). A HumanMessage guarantees there's
+    # always at least one real turn for the model to respond to.
+    task = HumanMessage(content=(
         f"Case ID: {state['case_id']}. Investigation goal: {state['query']}.\n"
         f"Conversation so far between the other agents on this case:\n"
         + "\n".join(f"[{t['from_agent']} -> {t['to_agent']}] {t['text']}" for t in state.get("transcript", [])[-6:])
     ))
+    # `task` MUST be the LAST message in this list, not the first. Every
+    # specialist node appends only AIMessages to state["messages"] (see the
+    # `update["messages"]` in each node below), so once any specialist has
+    # already run, state["messages"][-4:] is one or more AIMessages in a
+    # row. Putting `task` first and that history after it means the final
+    # message in the request is an AIMessage -- which Gemini rejects with
+    # `400 INVALID_ARGUMENT: Requests ending with a model turn are not
+    # supported.` This only ever showed up from Pattern onward (Records is
+    # the first specialist to run, so state["messages"] is still empty for
+    # it) -- putting the fresh HumanMessage last guarantees the request
+    # always ends on a human turn.
     try:
         result = agent.invoke(
-            {"messages": [task] + state["messages"][-4:]},
+            {"messages": state["messages"][-4:] + [task]},
             config={"recursion_limit": SPECIALIST_RECURSION_LIMIT},
         )
     except Exception as exc:
-        # routes/case_graph.py's outer handler forwards str(exc) verbatim
-        # to the Case Room UI as the `error` event -- without this, a
-        # Gemini quota/network failure shows up there as a multi-line raw
-        # JSON blob instead of something an officer can act on.
+        # Log the full exception (with traceback) to the backend terminal
+        # BEFORE swapping it for the clean officer-facing message below --
+        # routes/case_graph.py's outer handler only forwards str(exc) to
+        # the Case Room UI, so this is the one place that error is ever
+        # written down anywhere.
+        logger.exception("%s agent failed for case %s", cache_name, state.get("case_id"))
         raise RuntimeError(
             f"{cache_name.replace('_', ' ').title()} Agent: {friendly_llm_error(exc)}"
         ) from exc
@@ -226,6 +252,7 @@ def report_node(state: CaseState) -> dict:
     try:
         response = llm.invoke(prompt)
     except Exception as exc:
+        logger.exception("Report Agent failed for case %s", state.get("case_id"))
         raise RuntimeError(f"Report Agent: {friendly_llm_error(exc)}") from exc
     draft = content_to_text(response.content)
     return {

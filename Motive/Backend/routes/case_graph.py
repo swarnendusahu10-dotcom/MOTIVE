@@ -19,12 +19,14 @@ chat feed as a bubble from that agent.
 """
 
 import json
+import logging
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 from langgraph.types import Command
 
 from agents.graph import get_case_graph, initial_state
 
 router = APIRouter()
+logger = logging.getLogger("motive.case_graph")
 
 
 async def _drain_updates(ws: WebSocket, stream):
@@ -87,6 +89,12 @@ async def case_socket(ws: WebSocket, case_id: str):
     except WebSocketDisconnect:
         return
     except Exception as exc:  # surface backend errors to the frontend instead of a silent drop
+        # Belt-and-suspenders: agents/nodes.py already logs+cleans up LLM
+        # failures before they get here, but this catches anything else
+        # (a bad Firestore write, a bug in graph.py, etc.) that would
+        # otherwise vanish the moment it's swallowed into the websocket
+        # error event below.
+        logger.exception("Case Room graph run failed for case %s", case_id)
         try:
             await ws.send_text(json.dumps({"type": "error", "message": str(exc)}))
         except Exception:
