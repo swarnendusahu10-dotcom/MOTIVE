@@ -1,3 +1,8 @@
+# DEmo link of frontend
+motives-eight.vercel.app
+
+
+
 # Motive-KSP — Crime Intelligence Platform
 
 An AI-assisted crime intelligence platform built for the Karnataka State Police (KSP): officers file and browse FIRs (First Information Reports), ask a chatbot investigative questions, and run a multi-agent "Case Room" that retrieves records, finds patterns, suggests map visualisations, and drafts a linkage report for human sign-off before anything becomes an official lead.
