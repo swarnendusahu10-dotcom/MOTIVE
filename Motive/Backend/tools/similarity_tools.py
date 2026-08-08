@@ -1,4 +1,8 @@
 """
+⚠️ NOT USED BY THE LIVE APP — see database/firestore_db.py's module
+docstring. The live chatbot uses agents/tools_db.py + services/firebase_service.py
+(collection "crimes"), not this module.
+
 Similarity Agent tool. No model training — cosine similarity over embeddings
 that were generated once (via /cases/embed) and stored on each Firestore
 document. For a demo-scale collection (hundreds to a few thousand docs),

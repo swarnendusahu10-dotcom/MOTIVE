@@ -1,0 +1,1652 @@
+[
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1001",
+      "police_station": "Bengaluru Urban PS",
+      "district": "Bengaluru Urban",
+      "state": "Karnataka",
+      "registration_date": "2025-02-02"
+    },
+    "crime_classification": {
+      "category": "Cyber fraud",
+      "subcategory": "Pattern-linked case",
+      "severity": "Medium"
+    },
+    "incident_details": {
+      "date": "2025-02-02",
+      "time": "09:15",
+      "location": {
+        "address": "Location 1",
+        "city": "Bengaluru Urban",
+        "taluk": "Taluk 2",
+        "district": "Bengaluru Urban",
+        "state": "Karnataka",
+        "lat": 13.014668,
+        "lng": 77.557361
+      },
+      "description": "Case 1 involving cyber fraud."
+    },
+    "victims": [
+      {
+        "name": "Victim 1",
+        "age": 26,
+        "gender": "Male",
+        "occupation": "Employee",
+        "phone": "9000000001",
+        "address": "Bengaluru Urban"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "Black Pulsar Crew",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": "KA-03-MN-7741"
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 1",
+        "phone": "8000000001",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 1. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 1",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1002",
+      "police_station": "Mysuru PS",
+      "district": "Mysuru",
+      "state": "Karnataka",
+      "registration_date": "2025-03-03"
+    },
+    "crime_classification": {
+      "category": "Burglary",
+      "subcategory": "Pattern-linked case",
+      "severity": "High"
+    },
+    "incident_details": {
+      "date": "2025-03-03",
+      "time": "10:15",
+      "location": {
+        "address": "Location 2",
+        "city": "Mysuru",
+        "taluk": "Taluk 3",
+        "district": "Mysuru",
+        "state": "Karnataka",
+        "lat": 12.253088,
+        "lng": 76.680016
+      },
+      "description": "Case 2 involving burglary."
+    },
+    "victims": [
+      {
+        "name": "Victim 2",
+        "age": 27,
+        "gender": "Female",
+        "occupation": "Employee",
+        "phone": "9000000002",
+        "address": "Mysuru"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "Black Pulsar Crew",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": "KA-03-MN-7741"
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 2",
+        "phone": "8000000002",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 2. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 2",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1003",
+      "police_station": "Dakshina Kannada PS",
+      "district": "Dakshina Kannada",
+      "state": "Karnataka",
+      "registration_date": "2025-04-04"
+    },
+    "crime_classification": {
+      "category": "Vehicle theft",
+      "subcategory": "Pattern-linked case",
+      "severity": "Critical"
+    },
+    "incident_details": {
+      "date": "2025-04-04",
+      "time": "11:15",
+      "location": {
+        "address": "Location 3",
+        "city": "Dakshina Kannada",
+        "taluk": "Taluk 4",
+        "district": "Dakshina Kannada",
+        "state": "Karnataka",
+        "lat": 12.901084,
+        "lng": 74.873382
+      },
+      "description": "Case 3 involving vehicle theft."
+    },
+    "victims": [
+      {
+        "name": "Victim 3",
+        "age": 28,
+        "gender": "Male",
+        "occupation": "Employee",
+        "phone": "9000000003",
+        "address": "Dakshina Kannada"
+      }
+    ],
+    "suspects": [
+      {
+        "known": true,
+        "name": "",
+        "alias": "Black Pulsar Crew",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": "KA-03-MN-7741"
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 3",
+        "phone": "8000000003",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 3. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 3",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1004",
+      "police_station": "Ballari PS",
+      "district": "Ballari",
+      "state": "Karnataka",
+      "registration_date": "2025-05-05"
+    },
+    "crime_classification": {
+      "category": "Robbery",
+      "subcategory": "Pattern-linked case",
+      "severity": "Low"
+    },
+    "incident_details": {
+      "date": "2025-05-05",
+      "time": "12:15",
+      "location": {
+        "address": "Location 4",
+        "city": "Ballari",
+        "taluk": "Taluk 5",
+        "district": "Ballari",
+        "state": "Karnataka",
+        "lat": 15.18467,
+        "lng": 76.880473
+      },
+      "description": "Case 4 involving robbery."
+    },
+    "victims": [
+      {
+        "name": "Victim 4",
+        "age": 29,
+        "gender": "Female",
+        "occupation": "Employee",
+        "phone": "9000000004",
+        "address": "Ballari"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "Black Pulsar Crew",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": "KA-03-MN-7741"
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 4",
+        "phone": "8000000004",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 4. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 4",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1005",
+      "police_station": "Belagavi PS",
+      "district": "Belagavi",
+      "state": "Karnataka",
+      "registration_date": "2025-06-06"
+    },
+    "crime_classification": {
+      "category": "Chain snatching",
+      "subcategory": "Pattern-linked case",
+      "severity": "Medium"
+    },
+    "incident_details": {
+      "date": "2025-06-06",
+      "time": "13:15",
+      "location": {
+        "address": "Location 5",
+        "city": "Belagavi",
+        "taluk": "Taluk 1",
+        "district": "Belagavi",
+        "state": "Karnataka",
+        "lat": 15.874532,
+        "lng": 74.455098
+      },
+      "description": "Case 5 involving chain snatching."
+    },
+    "victims": [
+      {
+        "name": "Victim 5",
+        "age": 30,
+        "gender": "Male",
+        "occupation": "Employee",
+        "phone": "9000000005",
+        "address": "Belagavi"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "Black Pulsar Crew",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": "KA-03-MN-7741"
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 5",
+        "phone": "8000000005",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 5. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 5",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1006",
+      "police_station": "Dharwad PS",
+      "district": "Dharwad",
+      "state": "Karnataka",
+      "registration_date": "2025-07-07"
+    },
+    "crime_classification": {
+      "category": "Cyber fraud",
+      "subcategory": "Pattern-linked case",
+      "severity": "High"
+    },
+    "incident_details": {
+      "date": "2025-07-07",
+      "time": "14:15",
+      "location": {
+        "address": "Location 6",
+        "city": "Dharwad",
+        "taluk": "Taluk 2",
+        "district": "Dharwad",
+        "state": "Karnataka",
+        "lat": 15.447125,
+        "lng": 74.994888
+      },
+      "description": "Case 6 involving cyber fraud."
+    },
+    "victims": [
+      {
+        "name": "Victim 6",
+        "age": 31,
+        "gender": "Female",
+        "occupation": "Employee",
+        "phone": "9000000006",
+        "address": "Dharwad"
+      }
+    ],
+    "suspects": [
+      {
+        "known": true,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 6",
+        "phone": "8000000006",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 6. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 6",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1007",
+      "police_station": "Shivamogga PS",
+      "district": "Shivamogga",
+      "state": "Karnataka",
+      "registration_date": "2025-08-08"
+    },
+    "crime_classification": {
+      "category": "Burglary",
+      "subcategory": "Pattern-linked case",
+      "severity": "Critical"
+    },
+    "incident_details": {
+      "date": "2025-08-08",
+      "time": "15:15",
+      "location": {
+        "address": "Location 7",
+        "city": "Shivamogga",
+        "taluk": "Taluk 3",
+        "district": "Shivamogga",
+        "state": "Karnataka",
+        "lat": 13.914591,
+        "lng": 75.614425
+      },
+      "description": "Case 7 involving burglary."
+    },
+    "victims": [
+      {
+        "name": "Victim 7",
+        "age": 32,
+        "gender": "Male",
+        "occupation": "Employee",
+        "phone": "9000000007",
+        "address": "Shivamogga"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 7",
+        "phone": "8000000007",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 7. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 7",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1008",
+      "police_station": "Tumakuru PS",
+      "district": "Tumakuru",
+      "state": "Karnataka",
+      "registration_date": "2025-09-09"
+    },
+    "crime_classification": {
+      "category": "Vehicle theft",
+      "subcategory": "Pattern-linked case",
+      "severity": "Low"
+    },
+    "incident_details": {
+      "date": "2025-09-09",
+      "time": "16:15",
+      "location": {
+        "address": "Location 8",
+        "city": "Tumakuru",
+        "taluk": "Taluk 4",
+        "district": "Tumakuru",
+        "state": "Karnataka",
+        "lat": 13.293295,
+        "lng": 77.127702
+      },
+      "description": "Case 8 involving vehicle theft."
+    },
+    "victims": [
+      {
+        "name": "Victim 8",
+        "age": 33,
+        "gender": "Female",
+        "occupation": "Employee",
+        "phone": "9000000008",
+        "address": "Tumakuru"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 8",
+        "phone": "8000000008",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 8. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 8",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1009",
+      "police_station": "Hassan PS",
+      "district": "Hassan",
+      "state": "Karnataka",
+      "registration_date": "2025-10-10"
+    },
+    "crime_classification": {
+      "category": "Robbery",
+      "subcategory": "Pattern-linked case",
+      "severity": "Medium"
+    },
+    "incident_details": {
+      "date": "2025-10-10",
+      "time": "17:15",
+      "location": {
+        "address": "Location 9",
+        "city": "Hassan",
+        "taluk": "Taluk 5",
+        "district": "Hassan",
+        "state": "Karnataka",
+        "lat": 12.976785,
+        "lng": 76.119627
+      },
+      "description": "Case 9 involving robbery."
+    },
+    "victims": [
+      {
+        "name": "Victim 9",
+        "age": 34,
+        "gender": "Male",
+        "occupation": "Employee",
+        "phone": "9000000009",
+        "address": "Hassan"
+      }
+    ],
+    "suspects": [
+      {
+        "known": true,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 9",
+        "phone": "8000000009",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 9. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 9",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1010",
+      "police_station": "Udupi PS",
+      "district": "Udupi",
+      "state": "Karnataka",
+      "registration_date": "2025-11-11"
+    },
+    "crime_classification": {
+      "category": "Chain snatching",
+      "subcategory": "Pattern-linked case",
+      "severity": "High"
+    },
+    "incident_details": {
+      "date": "2025-11-11",
+      "time": "18:15",
+      "location": {
+        "address": "Location 10",
+        "city": "Udupi",
+        "taluk": "Taluk 1",
+        "district": "Udupi",
+        "state": "Karnataka",
+        "lat": 13.322312,
+        "lng": 74.742458
+      },
+      "description": "Case 10 involving chain snatching."
+    },
+    "victims": [
+      {
+        "name": "Victim 10",
+        "age": 35,
+        "gender": "Female",
+        "occupation": "Employee",
+        "phone": "9000000010",
+        "address": "Udupi"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 10",
+        "phone": "8000000010",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 10. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 10",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1011",
+      "police_station": "Bengaluru Urban PS",
+      "district": "Bengaluru Urban",
+      "state": "Karnataka",
+      "registration_date": "2025-12-12"
+    },
+    "crime_classification": {
+      "category": "Cyber fraud",
+      "subcategory": "Independent case",
+      "severity": "Critical"
+    },
+    "incident_details": {
+      "date": "2025-12-12",
+      "time": "19:15",
+      "location": {
+        "address": "Location 11",
+        "city": "Bengaluru Urban",
+        "taluk": "Taluk 2",
+        "district": "Bengaluru Urban",
+        "state": "Karnataka",
+        "lat": 12.991066,
+        "lng": 77.565422
+      },
+      "description": "Case 11 involving cyber fraud."
+    },
+    "victims": [
+      {
+        "name": "Victim 11",
+        "age": 36,
+        "gender": "Male",
+        "occupation": "Employee",
+        "phone": "9000000011",
+        "address": "Bengaluru Urban"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 11",
+        "phone": "8000000011",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 11. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 11",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1012",
+      "police_station": "Mysuru PS",
+      "district": "Mysuru",
+      "state": "Karnataka",
+      "registration_date": "2025-01-13"
+    },
+    "crime_classification": {
+      "category": "Burglary",
+      "subcategory": "Independent case",
+      "severity": "Low"
+    },
+    "incident_details": {
+      "date": "2025-01-13",
+      "time": "08:15",
+      "location": {
+        "address": "Location 12",
+        "city": "Mysuru",
+        "taluk": "Taluk 3",
+        "district": "Mysuru",
+        "state": "Karnataka",
+        "lat": 12.277571,
+        "lng": 76.622205
+      },
+      "description": "Case 12 involving burglary."
+    },
+    "victims": [
+      {
+        "name": "Victim 12",
+        "age": 37,
+        "gender": "Female",
+        "occupation": "Employee",
+        "phone": "9000000012",
+        "address": "Mysuru"
+      }
+    ],
+    "suspects": [
+      {
+        "known": true,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 12",
+        "phone": "8000000012",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 12. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 12",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1013",
+      "police_station": "Dakshina Kannada PS",
+      "district": "Dakshina Kannada",
+      "state": "Karnataka",
+      "registration_date": "2025-02-14"
+    },
+    "crime_classification": {
+      "category": "Vehicle theft",
+      "subcategory": "Independent case",
+      "severity": "Medium"
+    },
+    "incident_details": {
+      "date": "2025-02-14",
+      "time": "09:15",
+      "location": {
+        "address": "Location 13",
+        "city": "Dakshina Kannada",
+        "taluk": "Taluk 4",
+        "district": "Dakshina Kannada",
+        "state": "Karnataka",
+        "lat": 12.887199,
+        "lng": 74.844779
+      },
+      "description": "Case 13 involving vehicle theft."
+    },
+    "victims": [
+      {
+        "name": "Victim 13",
+        "age": 38,
+        "gender": "Male",
+        "occupation": "Employee",
+        "phone": "9000000013",
+        "address": "Dakshina Kannada"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 13",
+        "phone": "8000000013",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 13. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 13",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1014",
+      "police_station": "Ballari PS",
+      "district": "Ballari",
+      "state": "Karnataka",
+      "registration_date": "2025-03-15"
+    },
+    "crime_classification": {
+      "category": "Robbery",
+      "subcategory": "Independent case",
+      "severity": "High"
+    },
+    "incident_details": {
+      "date": "2025-03-15",
+      "time": "10:15",
+      "location": {
+        "address": "Location 14",
+        "city": "Ballari",
+        "taluk": "Taluk 5",
+        "district": "Ballari",
+        "state": "Karnataka",
+        "lat": 15.175575,
+        "lng": 76.927286
+      },
+      "description": "Case 14 involving robbery."
+    },
+    "victims": [
+      {
+        "name": "Victim 14",
+        "age": 39,
+        "gender": "Female",
+        "occupation": "Employee",
+        "phone": "9000000014",
+        "address": "Ballari"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 14",
+        "phone": "8000000014",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 14. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 14",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1015",
+      "police_station": "Belagavi PS",
+      "district": "Belagavi",
+      "state": "Karnataka",
+      "registration_date": "2025-04-16"
+    },
+    "crime_classification": {
+      "category": "Chain snatching",
+      "subcategory": "Independent case",
+      "severity": "Critical"
+    },
+    "incident_details": {
+      "date": "2025-04-16",
+      "time": "11:15",
+      "location": {
+        "address": "Location 15",
+        "city": "Belagavi",
+        "taluk": "Taluk 1",
+        "district": "Belagavi",
+        "state": "Karnataka",
+        "lat": 15.866581,
+        "lng": 74.489896
+      },
+      "description": "Case 15 involving chain snatching."
+    },
+    "victims": [
+      {
+        "name": "Victim 15",
+        "age": 40,
+        "gender": "Male",
+        "occupation": "Employee",
+        "phone": "9000000015",
+        "address": "Belagavi"
+      }
+    ],
+    "suspects": [
+      {
+        "known": true,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 15",
+        "phone": "8000000015",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 15. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 15",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1016",
+      "police_station": "Dharwad PS",
+      "district": "Dharwad",
+      "state": "Karnataka",
+      "registration_date": "2025-05-17"
+    },
+    "crime_classification": {
+      "category": "Cyber fraud",
+      "subcategory": "Independent case",
+      "severity": "Low"
+    },
+    "incident_details": {
+      "date": "2025-05-17",
+      "time": "12:15",
+      "location": {
+        "address": "Location 16",
+        "city": "Dharwad",
+        "taluk": "Taluk 2",
+        "district": "Dharwad",
+        "state": "Karnataka",
+        "lat": 15.48642,
+        "lng": 74.971456
+      },
+      "description": "Case 16 involving cyber fraud."
+    },
+    "victims": [
+      {
+        "name": "Victim 16",
+        "age": 41,
+        "gender": "Female",
+        "occupation": "Employee",
+        "phone": "9000000016",
+        "address": "Dharwad"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "Ranga",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 16",
+        "phone": "8000000016",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 16. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 16",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1017",
+      "police_station": "Shivamogga PS",
+      "district": "Shivamogga",
+      "state": "Karnataka",
+      "registration_date": "2025-06-18"
+    },
+    "crime_classification": {
+      "category": "Burglary",
+      "subcategory": "Independent case",
+      "severity": "Medium"
+    },
+    "incident_details": {
+      "date": "2025-06-18",
+      "time": "13:15",
+      "location": {
+        "address": "Location 17",
+        "city": "Shivamogga",
+        "taluk": "Taluk 3",
+        "district": "Shivamogga",
+        "state": "Karnataka",
+        "lat": 13.888479,
+        "lng": 75.52757
+      },
+      "description": "Case 17 involving burglary."
+    },
+    "victims": [
+      {
+        "name": "Victim 17",
+        "age": 42,
+        "gender": "Male",
+        "occupation": "Employee",
+        "phone": "9000000017",
+        "address": "Shivamogga"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "Ranga",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 17",
+        "phone": "8000000017",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 17. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 17",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1018",
+      "police_station": "Tumakuru PS",
+      "district": "Tumakuru",
+      "state": "Karnataka",
+      "registration_date": "2025-07-19"
+    },
+    "crime_classification": {
+      "category": "Vehicle theft",
+      "subcategory": "Independent case",
+      "severity": "High"
+    },
+    "incident_details": {
+      "date": "2025-07-19",
+      "time": "14:15",
+      "location": {
+        "address": "Location 18",
+        "city": "Tumakuru",
+        "taluk": "Taluk 4",
+        "district": "Tumakuru",
+        "state": "Karnataka",
+        "lat": 13.375863,
+        "lng": 77.093328
+      },
+      "description": "Case 18 involving vehicle theft."
+    },
+    "victims": [
+      {
+        "name": "Victim 18",
+        "age": 43,
+        "gender": "Female",
+        "occupation": "Employee",
+        "phone": "9000000018",
+        "address": "Tumakuru"
+      }
+    ],
+    "suspects": [
+      {
+        "known": true,
+        "name": "Ranga",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 18",
+        "phone": "8000000018",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 18. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 18",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1019",
+      "police_station": "Hassan PS",
+      "district": "Hassan",
+      "state": "Karnataka",
+      "registration_date": "2025-08-20"
+    },
+    "crime_classification": {
+      "category": "Robbery",
+      "subcategory": "Independent case",
+      "severity": "Critical"
+    },
+    "incident_details": {
+      "date": "2025-08-20",
+      "time": "15:15",
+      "location": {
+        "address": "Location 19",
+        "city": "Hassan",
+        "taluk": "Taluk 5",
+        "district": "Hassan",
+        "state": "Karnataka",
+        "lat": 13.012123,
+        "lng": 76.07639
+      },
+      "description": "Case 19 involving robbery."
+    },
+    "victims": [
+      {
+        "name": "Victim 19",
+        "age": 44,
+        "gender": "Male",
+        "occupation": "Employee",
+        "phone": "9000000019",
+        "address": "Hassan"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 19",
+        "phone": "8000000019",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 19. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 19",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1020",
+      "police_station": "Udupi PS",
+      "district": "Udupi",
+      "state": "Karnataka",
+      "registration_date": "2025-09-21"
+    },
+    "crime_classification": {
+      "category": "Chain snatching",
+      "subcategory": "Independent case",
+      "severity": "Low"
+    },
+    "incident_details": {
+      "date": "2025-09-21",
+      "time": "16:15",
+      "location": {
+        "address": "Location 20",
+        "city": "Udupi",
+        "taluk": "Taluk 1",
+        "district": "Udupi",
+        "state": "Karnataka",
+        "lat": 13.386235,
+        "lng": 74.699386
+      },
+      "description": "Case 20 involving chain snatching."
+    },
+    "victims": [
+      {
+        "name": "Victim 20",
+        "age": 45,
+        "gender": "Female",
+        "occupation": "Employee",
+        "phone": "9000000020",
+        "address": "Udupi"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 20",
+        "phone": "8000000020",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 20. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 20",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1021",
+      "police_station": "Bengaluru Urban PS",
+      "district": "Bengaluru Urban",
+      "state": "Karnataka",
+      "registration_date": "2025-10-22"
+    },
+    "crime_classification": {
+      "category": "Cyber fraud",
+      "subcategory": "Independent case",
+      "severity": "Medium"
+    },
+    "incident_details": {
+      "date": "2025-10-22",
+      "time": "17:15",
+      "location": {
+        "address": "Location 21",
+        "city": "Bengaluru Urban",
+        "taluk": "Taluk 2",
+        "district": "Bengaluru Urban",
+        "state": "Karnataka",
+        "lat": 12.927559,
+        "lng": 77.572641
+      },
+      "description": "Case 21 involving cyber fraud."
+    },
+    "victims": [
+      {
+        "name": "Victim 21",
+        "age": 46,
+        "gender": "Male",
+        "occupation": "Employee",
+        "phone": "9000000021",
+        "address": "Bengaluru Urban"
+      }
+    ],
+    "suspects": [
+      {
+        "known": true,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 21",
+        "phone": "8000000021",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 21. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 21",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1022",
+      "police_station": "Mysuru PS",
+      "district": "Mysuru",
+      "state": "Karnataka",
+      "registration_date": "2025-11-23"
+    },
+    "crime_classification": {
+      "category": "Burglary",
+      "subcategory": "Independent case",
+      "severity": "High"
+    },
+    "incident_details": {
+      "date": "2025-11-23",
+      "time": "18:15",
+      "location": {
+        "address": "Location 22",
+        "city": "Mysuru",
+        "taluk": "Taluk 3",
+        "district": "Mysuru",
+        "state": "Karnataka",
+        "lat": 12.284201,
+        "lng": 76.596933
+      },
+      "description": "Case 22 involving burglary."
+    },
+    "victims": [
+      {
+        "name": "Victim 22",
+        "age": 47,
+        "gender": "Female",
+        "occupation": "Employee",
+        "phone": "9000000022",
+        "address": "Mysuru"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 22",
+        "phone": "8000000022",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 22. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 22",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1023",
+      "police_station": "Dakshina Kannada PS",
+      "district": "Dakshina Kannada",
+      "state": "Karnataka",
+      "registration_date": "2025-12-24"
+    },
+    "crime_classification": {
+      "category": "Vehicle theft",
+      "subcategory": "Independent case",
+      "severity": "Critical"
+    },
+    "incident_details": {
+      "date": "2025-12-24",
+      "time": "19:15",
+      "location": {
+        "address": "Location 23",
+        "city": "Dakshina Kannada",
+        "taluk": "Taluk 4",
+        "district": "Dakshina Kannada",
+        "state": "Karnataka",
+        "lat": 12.93388,
+        "lng": 74.817269
+      },
+      "description": "Case 23 involving vehicle theft."
+    },
+    "victims": [
+      {
+        "name": "Victim 23",
+        "age": 48,
+        "gender": "Male",
+        "occupation": "Employee",
+        "phone": "9000000023",
+        "address": "Dakshina Kannada"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 23",
+        "phone": "8000000023",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 23. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 23",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1024",
+      "police_station": "Ballari PS",
+      "district": "Ballari",
+      "state": "Karnataka",
+      "registration_date": "2025-01-25"
+    },
+    "crime_classification": {
+      "category": "Robbery",
+      "subcategory": "Independent case",
+      "severity": "Low"
+    },
+    "incident_details": {
+      "date": "2025-01-25",
+      "time": "08:15",
+      "location": {
+        "address": "Location 24",
+        "city": "Ballari",
+        "taluk": "Taluk 5",
+        "district": "Ballari",
+        "state": "Karnataka",
+        "lat": 15.146041,
+        "lng": 76.953363
+      },
+      "description": "Case 24 involving robbery."
+    },
+    "victims": [
+      {
+        "name": "Victim 24",
+        "age": 49,
+        "gender": "Female",
+        "occupation": "Employee",
+        "phone": "9000000024",
+        "address": "Ballari"
+      }
+    ],
+    "suspects": [
+      {
+        "known": true,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 24",
+        "phone": "8000000024",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 24. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 24",
+    "status": "open"
+  },
+  {
+    "fir_information": {
+      "fir_number": "KAR-2025-1025",
+      "police_station": "Belagavi PS",
+      "district": "Belagavi",
+      "state": "Karnataka",
+      "registration_date": "2025-02-26"
+    },
+    "crime_classification": {
+      "category": "Chain snatching",
+      "subcategory": "Independent case",
+      "severity": "Medium"
+    },
+    "incident_details": {
+      "date": "2025-02-26",
+      "time": "09:15",
+      "location": {
+        "address": "Location 25",
+        "city": "Belagavi",
+        "taluk": "Taluk 1",
+        "district": "Belagavi",
+        "state": "Karnataka",
+        "lat": 15.819814,
+        "lng": 74.524566
+      },
+      "description": "Case 25 involving chain snatching."
+    },
+    "victims": [
+      {
+        "name": "Victim 25",
+        "age": 50,
+        "gender": "Male",
+        "occupation": "Employee",
+        "phone": "9000000025",
+        "address": "Belagavi"
+      }
+    ],
+    "suspects": [
+      {
+        "known": false,
+        "name": "",
+        "alias": "",
+        "age": "",
+        "gender": "Male",
+        "relationship_to_victim": "",
+        "description": "Linked suspect pattern",
+        "vehicle_details": ""
+      }
+    ],
+    "evidence": [
+      {
+        "type": "CCTV",
+        "description": "Camera footage collected"
+      }
+    ],
+    "witnesses": [
+      {
+        "name": "Witness 25",
+        "phone": "8000000025",
+        "statement": "Observed incident"
+      }
+    ],
+    "narrative": "Detailed FIR narrative for case 25. Includes modus operandi, timeline, and investigative leads. Designed for similarity search and pattern matching.",
+    "reported_by": "Officer 25",
+    "status": "open"
+  }
+]

@@ -33,10 +33,12 @@ class CaseState(TypedDict):
     evidence_notes: dict           # from Evidence Agent (multimodal extraction)
 
     report_draft: str              # from Report Agent
-    linked_case_ids: list[str]
+    linked_case_ids: list[str]     # case IDs the Pattern Agent's tools surfaced
 
     next: str                      # supervisor's routing decision
     turns: int                     # loop guard
+    records_recalled: int          # how many times Pattern Agent sent work back to Records
+                                    # (bounds the records_agent -> pattern_agent -> records_agent loop)
 
     # human-in-the-loop
     awaiting_human: bool

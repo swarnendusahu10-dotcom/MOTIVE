@@ -14,6 +14,7 @@ from langchain_core.tools import tool
 from langchain_core.messages import HumanMessage
 from agents.llm import get_vision_llm
 from agents.utils import content_to_text
+from agents.errors import friendly_llm_error
 from services import firebase_service as fb
 
 EXTRACTION_PROMPT = """You are the Evidence Analyst for the Karnataka State \
@@ -51,7 +52,20 @@ def analyze_image_evidence(case_id: str, image_base64: str, mime_type: str = "im
         {"type": "text", "text": EXTRACTION_PROMPT},
         {"type": "image_url", "image_url": f"data:{mime_type};base64,{image_base64}"},
     ])
-    response = llm.invoke([message])
+    try:
+        response = llm.invoke([message])
+    except Exception as exc:
+        # Returning a normal dict (instead of raising) lets the ReAct loop
+        # keep going and report this in its own answer -- e.g. "I
+        # couldn't analyse that photo, Gemini's quota is exhausted" --
+        # rather than a vision-model hiccup killing the entire chat turn.
+        return {
+            "summary": friendly_llm_error(exc),
+            "entities": {},
+            "confidence": "low",
+            "evidence_id": None,
+            "error": True,
+        }
     text = content_to_text(response.content).removeprefix("```json").removesuffix("```").strip()
     try:
         parsed = json.loads(text)

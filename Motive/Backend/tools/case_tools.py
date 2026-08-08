@@ -1,4 +1,8 @@
 """
+⚠️ NOT USED BY THE LIVE APP — see database/firestore_db.py's module
+docstring. The live chatbot uses agents/tools_db.py + services/firebase_service.py
+(collection "crimes"), not this module.
+
 Records Agent / Map Agent tools.
 
 Each function here is a plain Python function with type hints + a docstring —

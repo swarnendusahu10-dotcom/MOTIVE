@@ -42,6 +42,15 @@ def zoom_district(district: str) -> dict:
 
 
 @tool
+def open_map(district: str = "") -> dict:
+    """Open the crime map page. Use this for a plain 'open the map' /
+    'show me the map' request with no specific district or hotspot in
+    mind. If the officer did name a district, pass it so the map opens
+    already focused there instead of the default state-wide view."""
+    return {"action": "openMap", "district": district or None}
+
+
+@tool
 def geo_cluster_summary(crime_type: str) -> dict:
     """Summarise which districts currently have the most reported cases
     of a given crime type, based on live Firestore data — useful before
@@ -55,4 +64,4 @@ def geo_cluster_summary(crime_type: str) -> dict:
     return {"crime_type": crime_type, "district_counts": ranked}
 
 
-GEO_TOOLS = [show_hotspots, show_crime_trend, compare_districts, zoom_district, geo_cluster_summary]
+GEO_TOOLS = [show_hotspots, show_crime_trend, compare_districts, zoom_district, open_map, geo_cluster_summary]

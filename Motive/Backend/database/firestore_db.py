@@ -1,10 +1,18 @@
 """
-Firestore connection for the backend, via the Firebase Admin SDK.
+⚠️ NOT USED BY THE LIVE APP — kept only for reference / possible future use.
 
-This replaces database/db.py (SQLite) completely — there is now exactly one
-place case data lives: the `firs` collection in Firestore, the same
-collection the frontend's CrimeDataEntry wizard writes to. The backend
-reads/writes that same collection so agents always see live data, not a copy.
+Nothing in app.py imports this module or the tools built on it
+(tools/case_tools.py, tools/similarity_tools.py). The chatbot and every
+route actually wired up in app.py go through config.py -> get_db() and
+services/firebase_service.py, which read/write the "crimes" collection —
+see services/firebase_service.py's module docstring for the real, current
+source of truth. This file's "firs" collection is NOT the same collection
+the chatbot reads. Do not resurrect these tools without first pointing them
+at services/firebase_service.py's schema, or you will recreate the exact
+"data is in one collection, chatbot reads another" bug this codebase already
+hit once (synthetic FIR data uploaded to a collection nothing read from).
+
+Firestore connection for the backend, via the Firebase Admin SDK.
 
 Setup:
 1. Firebase Console -> Project Settings -> Service Accounts -> Generate new

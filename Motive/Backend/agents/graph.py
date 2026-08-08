@@ -12,6 +12,11 @@ route (routes/case_graph.py) streams to the frontend Case Room page.
                                                            --(more work)--> pattern_agent
                         --(human_review)-----------------> ...
 
+The supervisor's routing is now a deterministic Python function (see
+agents/nodes.py) rather than an LLM call, so this shape is fixed:
+records_agent -> pattern_agent -> (optional single recall back to
+records_agent) -> geo_agent -> report_agent -> human_review.
+
 A MemorySaver checkpointer gives every case its own persistent thread
 (keyed by case_id) — reopen the same case later and the graph resumes
 with full memory of what every agent already found and said.
@@ -86,6 +91,7 @@ def initial_state(case_id: str, query: str) -> CaseState:
         "linked_case_ids": [],
         "next": "records_agent",
         "turns": 0,
+        "records_recalled": 0,
         "awaiting_human": False,
         "human_decision": "",
         "human_feedback": "",
